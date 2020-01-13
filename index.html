@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Главная страница - демо Wiki</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- Обертка всего контента   -->
+	<div class="page-wrapper">
+
+		<!-- Левая колонка -->
+		<div class="sidebar-col">
+
+			<!-- Логотип -->
+			<div class="aside-block">
+				<div class="logo">
+					<a href="index.html">
+						<!-- <img src="img/wiki-logo.png" alt="Википедия"> -->
+            <img src="http://test.xetc.ru/wiki/img/wiki-logo.png" alt="Википедия">
+					</a>
+				</div>
+			</div>
+			<!-- // Логотип -->
+
+			<!-- Кнопка -->
+			<div class="aside-block">
+				<a href="new.html" class="button-new">Добавить статью</a>
+			</div>
+			<!-- // Кнопка -->
+
+			<!-- Новые статьи  -->
+			<div class="aside-block">
+				<h3 class="aside-title">
+					Новые статьи
+				</h3>
+				<ul class="articles-list" id="last-articles">
+				</ul>
+			</div>
+			<!-- // Новые статьи  -->
+
+		</div>
+		<!-- // Левая колонка -->
+
+		<!-- Центральная колонка -->
+		<div class="main-col">
+
+			<!-- Блок 1 -->
+			<div class="section-block">
+				<div class="title">Добро пожаловать в JS-Wiki</div>
+				<p>это демонстрационный проект | внесение правок открыто и локально</p>
+			</div>
+			<!-- // Блок 1 -->
+			<div class="section-block">
+				<div class="title-new-article">INTRO</div>
+				<article class="article-wrapper" id="markdown-intro-result">
+				</article>
+				<button href="article.html" class="button" id="read-article">Читать полностью</button>
+			</div>
+			<!-- Все остальные статьи  -->
+			<div class="section-block" id="all-articles">
+				<div class="title-new-article">Все статьи</div>
+				<ul class="all-list">
+				</ul>
+			</div>
+			<!-- // Все остальные статьи  -->
+			<!-- Новая статья   - промо -->
+			<div class="section-block">
+				<div class="title-new-article">Последняя статья</div>
+				<!-- <article class="article-wrapper" id="markdown-preview"> -->
+				<article class="article-wrapper" id="markdown-result">
+				</article>
+				<button href="article.html" class="button" id="read-article">Читать полностью</button>
+			</div>
+			<!-- // Новая статья   - промо -->
+
+		</div>
+		<!-- // Центральная колонка -->
+	</div>
+
+	<!-- Копирайты -->
+	<footer class="page-footer">
+		<p>Демонстрационный проект динамически-обновляемых статей - <a href="http://xetc.ru" target="_blank">Сергей Стафов</a></p>
+	</footer>
+	<!-- Копирайты -->
+
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Статья - демо Wiki</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="page-wrapper">
+		<div class="sidebar-col">
+
+			<div class="aside-block">
+				<div class="logo">
+					<a href="index.html">
+						<!-- <img src="img/wiki-logo.png" alt="Википедия"> -->
+            <img src="http://test.xetc.ru/wiki/img/wiki-logo.png" alt="Википедия">
+					</a>
+				</div>
+			</div>
+
+			<div class="aside-block">
+				<a href="new.html" class="button-new">Добавить статью</a>
+			</div>
+
+			<div class="aside-block">
+				<h3 class="aside-title">
+					Новые статьи
+				</h3>
+				<ul class="articles-list" id="last-articles">
+				</ul>
+			</div>
+
+		</div>
+		<div class="main-col">
+			<article class="article-wrapper" id="article">
+			</article>
+			<button class="button" id="edit-article">Редактировать статью</button>
+		</div>
+	</div>
+
+	<!-- Копирайты -->
+	<footer class="page-footer">
+		<p>Демонстрационный проект динамически-обновляемых статей - <a href="http://xetc.ru" target="_blank">Сергей Стафов</a></p>
+	</footer>
+	<!-- Копирайты -->
+
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="js/article.js"></script>
+	<script src="js/init.js"></script>
+
+</body>
+
+</html>
